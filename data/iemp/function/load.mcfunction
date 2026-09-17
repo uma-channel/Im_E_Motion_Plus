@@ -6,8 +6,7 @@
 
 # 追加ディメンションに対してforceloadと固定UUIDのmarkerの設置を行う
   execute if data storage iemp: {DimensionGenerated:1b} in iemp: run forceload add -1 -1 1 1
-  execute if data storage iemp: {DimensionGenerated:1b} in iemp: run summon marker 0.0 0.0 0.0 {UUID:[I;5636,369366532,369360896,5636]}
-
+  execute if data storage iemp: {DimensionGenerated:1b} in iemp: run summon marker 0.0 0.0 0.0 {UUID:[I;0628,1847293066,2081736452,0628]}
 
 scoreboard objectives add iemp_value dummy
 
