@@ -43,7 +43,6 @@
  - Minecraft JE 1.21.11 ~ 26.1 Snap.5 版 (動作確認済み)
  - Minecraft JE 26.1 Snap.6 ~ 26.3 Snap.2 版
  - Minecraft JE 26.3 Snap.3 版
- - Minecraft JE 26.3 Snap.4 ~ 版
 
 
 ## 使用方法
