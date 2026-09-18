@@ -40,8 +40,8 @@
 ## 動作要件
 - Minecraft JE 1.21.11 ~ 26.1 Snap.5 
 - 動作確認済み: 1.21.11
-- [26.1+版](https://github.com/)
-- [26.3+版](https://github.com/) (推奨)
+- [26.1+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.1%2B)
+- [26.3+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.3%2B) (推奨)
 
 
 ## 使用方法
