@@ -12,7 +12,7 @@
 
 ## 26.3 以降への対応
 
-猫愛氏本家が26.3向けに公開したImpulse Motion r2（`apply_impulse`のMojang側バグ修正に
+猫愛氏が26.3向けに公開したImpulse Motion r2（`apply_impulse`のMojang側バグ修正に
 追随した更新）を参考に、本フォークも26.3系のAPIへ全面対応させた。詳細は下記参照。
 
 ---
