@@ -1,6 +1,6 @@
 # Im E Motion Plus
 
-エンチャントの`apply_impulse`を利用してプレイヤー・Mobのモーションを操作するデータパック
+エンチャントの`apply_impulse`を利用してプレイヤー・MobのMotionを操作するデータパック
 
 ---
 
