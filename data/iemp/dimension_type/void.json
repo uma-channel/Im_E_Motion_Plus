@@ -1,0 +1,27 @@
+{
+  "ambient_light": 0,
+  "attributes": {
+    "minecraft:gameplay/bed_rule": {
+      "can_set_spawn": "never",
+      "can_sleep": "never",
+      "explodes": false
+    },
+    "minecraft:gameplay/nether_portal_spawns_piglin": false,
+    "minecraft:gameplay/respawn_anchor_works": false,
+    "minecraft:gameplay/piglins_zombify": false,
+    "minecraft:gameplay/can_start_raid": false,
+    "minecraft:gameplay/water_evaporates": false,
+    "minecraft:visual/fog_color": "#c0d8ff",
+    "minecraft:visual/sky_color": "#78a7ff"
+  },
+  "coordinate_scale": 1,
+  "has_ceiling": false,
+  "has_skylight": true,
+  "has_fixed_time": true,
+  "height": 64,
+  "infiniburn": "#infiniburn_overworld",
+  "logical_height": 64,
+  "min_y": -32,
+  "monster_spawn_block_light_limit": 0,
+  "monster_spawn_light_level": 0
+}
