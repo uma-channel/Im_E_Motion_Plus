@@ -4,7 +4,7 @@
 
 ---
 
-このデータパックは、ひろばお氏の[PlayerMotion](https://github.com/Hirobao1/CustomEnchant_PlayerMotion)及び[ImpulseMotion](https://github.com/nea-c/ImpulseMotion)をフォークしたものです。
+このデータパックは、ひろばお氏の[PlayerMotion](https://github.com/Hirobao1/CustomEnchant_PlayerMotion)及び猫愛氏の[ImpulseMotion](https://github.com/nea-c/ImpulseMotion)をフォークしたものです。
 
 大規模な内部処理の変更により、使用感・同一tick動作での挙動が異なります。
 
