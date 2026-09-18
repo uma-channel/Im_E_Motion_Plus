@@ -15,6 +15,49 @@
 猫愛氏本家が26.3向けに公開したImpulse Motion r2（`apply_impulse`のMojang側バグ修正に
 追随した更新）を参考に、本フォークも26.3系のAPIへ全面対応させた。
 
+---
+
+## 動作要件
+- Minecraft JE 26.3 以降
+- [1.21.11+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/1.21.11%2B)
+- [26.1+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.1-Snap.6%2B)
+
+
+## 使用方法
+
+`e_motion: in`にデータをセットしてfunctionを実行！
+
+### 例1：実行方向で
+```
+data modify storage e_motion: in set value {x:0.0000,y:0.0000,z:1.0000, is_looking:true}
+execute rotated ~ -20 run function #e_motion:
+```
+### 例2：XYZで
+```
+data modify storage e_motion: in set value {x:1.0000,y:10.0000,z:1.0000}
+function #e_motion:
+```
+
+#### inに記載できるデータ一覧
+ - x / y / z
+> 方向ベクトル成分値 (0.0001単位)
+ - is_explosion
+> 爆発ノックバック扱いかどうか True/False
+ - is_knockback
+> ノックバック扱いかどうか True/False
+ - is_looking
+> 実行時の向きに基づくかどうか True/False
+ - multiplier.elytra
+> エリトラ飛行中の場合の付与量を調整 (0.001単位)
+ - multiplier.in_water
+> 水中の場合の付与量を調整 (0.001単位)
+ - multiplier.swim
+> 泳いでいる場合の付与量を調整 (0.001単位)
+
+---
+
+# 変更点
+
 ## Mojang側の変更点
 - **MC-303493**：`apply_impulse`が「ぶつかる方向の成分を適用しない」不具合。
   26.3 Snap.4で修正。
@@ -55,8 +98,6 @@ MarkerのUUID問題を修正
 - 本家と不同のUUID
 - UUIDが一致しない問題を修正
 
----
-
 ## ImpulseMotion r2 比較
 - 位取り記数法によるエンチャント条件の軽量化
 - ゲームモード退避によるY軸消失バグへの対策
@@ -65,43 +106,7 @@ MarkerのUUID問題を修正
   ため、この不具合の形自体が起こらなくなっている
   （代わりに32bit整数のオーバーフローという別のリスクを負っている）
 
-
-## 動作要件
-- Minecraft JE 26.3 以降
-- [1.21.11+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/1.21.11%2B)
-- [26.1+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.1-Snap.6%2B)
-
-
-## 使用方法
-
-`e_motion: in`にデータをセットしてfunctionを実行！
-
-### 例1：実行方向で
-```
-data modify storage e_motion: in set value {x:0.0000,y:0.0000,z:1.0000, is_looking:true}
-execute rotated ~ -20 run function #e_motion:
-```
-### 例2：XYZで
-```
-data modify storage e_motion: in set value {x:1.0000,y:10.0000,z:1.0000}
-function #e_motion:
-```
-
-#### inに記載できるデータ一覧
- - x / y / z
-> 方向ベクトル成分値 (0.0001単位)
- - is_explosion
-> 爆発ノックバック扱いかどうか True/False
- - is_knockback
-> ノックバック扱いかどうか True/False
- - is_looking
-> 実行時の向きに基づくかどうか True/False
- - multiplier.elytra
-> エリトラ飛行中の場合の付与量を調整 (0.001単位)
- - multiplier.in_water
-> 水中の場合の付与量を調整 (0.001単位)
- - multiplier.swim
-> 泳いでいる場合の付与量を調整 (0.001単位)
+---
 
 ## ライセンス
 LICENSEファイルを必ず確認してください
