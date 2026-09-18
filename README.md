@@ -77,9 +77,9 @@ MarkerのUUID問題を修正
 
 
 ## 動作要件
-Minecraft JE 26.3 以降
-[1.21.11+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/1.21.11%2B)
-[26.1+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.1-Snap.6%2B)
+> Minecraft JE 26.3 以降
+> [1.21.11+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/1.21.11%2B)
+> [26.1+版](https://github.com/uma-channel/Im_E_Motion_Plus/tree/26.1-Snap.6%2B)
 
 
 ## 使用方法
