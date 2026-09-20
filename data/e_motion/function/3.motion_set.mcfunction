@@ -63,14 +63,14 @@ function e_motion:store/z
 scoreboard players reset #e_motion
 scoreboard players reset #e_motion.digit
 
-# [常時有効] 発火の瞬間だけ衝突判定のないゲームモード（スペクテイター/
-# アドベンチャー）を経由し、ブロックの隙間が無い方向にも押し出せるようにする。
-# ただしこれはプレイヤーのクライアント主導の移動処理と競合しうるため、
-# ごく低い確率で直後に設定したMotionが上書きされて消えることがある
-# （詳細はREADME.md「ゲームモード退避（6.gamemode_swap）について」を参照）。
-function e_motion:6.gamemode_swap_enter
+# 天送り
+summon marker ~ ~ ~ {Tags:["iemp."]}
+rotate @n[tag=iemp.] ~ ~
+execute at @s run tp @s ~ 10000 ~
 
 # エンチャント付与：符号(custom_data)とレベルを1コマンドでアトミックに反映する。
 function e_motion:4.enchant_set with storage e_motion: _.macro
 
-function e_motion:6.gamemode_swap_exit
+# 天から帰還
+tp @s @n[tag=iemp.]
+kill @n[tag=iemp.]
