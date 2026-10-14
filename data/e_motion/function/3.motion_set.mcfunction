@@ -46,16 +46,13 @@ function e_motion:store/z
 scoreboard players reset #e_motion
 scoreboard players reset #e_motion.digit
 
-# [FIX] 何もない上空へ一瞬だけ退避させ、衝突判定を確実に避ける。
-# ゲームモード切り替えと違い、long-pressで使用中のアイテム（弓を引く・
-# 盾を構える・食べる等）を中断させない。
-function e_motion:6.evacuate_enter
+# 何もない上空へ一瞬だけ退避させ、衝突判定を確実に避ける。
+summon marker ~ ~ ~ {Tags:["iemp."]}
+tp @s ~ ~1000 ~
 
 # エンチャント付与：符号(custom_data)とレベルを1コマンドでアトミックに反映する。
 function e_motion:4.enchant_set with storage e_motion: _.macro
 
-# [重要] プレイヤーの`tick`エンチャント効果は、このtickのコマンド実行フェーズ
-# より後（Connection::tick内のServerPlayer::doTick）で評価されるため、ここで
-# 即座に退避を解除すると実際の発火より前に戻ってしまい退避が無意味になる。
-# 1tick後に解除することで、このtick内での発火を確実に待ってから戻す。
-schedule function e_motion:6.evacuate_exit 1t replace
+# 復帰する
+tp @s @n[tag=iemp.]
+kill @n[tag=iemp.]
