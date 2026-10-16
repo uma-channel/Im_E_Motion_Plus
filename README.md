@@ -41,6 +41,7 @@ function #e_motion:
 > 実行者の位置・向き（視点）・ディメンションは変化しないため、`execute as @a run function #e_motion:` のように
 > `at @s` を付けない呼び方でも動作する。`is_looking:true` の向きは「実行コンテキストの向き」基準で、
 > `rotated ~ -20` などを併用しても、計算で反映されるだけで対象の視点は動かない。
+> 設定する数値と対応する飛距離は[このサイト](https://clpc.club/e_motion)で変換できます。
 
 #### inに記載できるデータ一覧
  - x / y / z
