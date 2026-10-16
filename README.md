@@ -46,6 +46,7 @@ function #e_motion:
 #### inに記載できるデータ一覧
  - x / y / z
 > 方向ベクトル成分値 (0.0001単位)
+> 設定する数値と対応する飛距離は[このサイト](https://clpc.club/e_motion)で変換できます。
  - is_explosion
 > 爆発ノックバック扱いかどうか True/False
  - is_knockback
