@@ -2,7 +2,7 @@
 
 エンチャントの`apply_impulse`を利用してプレイヤー・MobのMotionを操作するデータパック
 
-設定する数値と対応する飛距離は[このサイト](https://clpc.club/e_motion)で変換できます。
+入力する数値は[このサイト](https://clpc.club/e_motion)を参考にしてください。
 
 ---
 
