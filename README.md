@@ -49,7 +49,7 @@ function #e_motion:
 #### inに記載できるデータ一覧
  - x / y / z
 > 方向ベクトル成分値 (0.0001単位)
-> 入力する数値は[このサイト](https://clpc.club/e_motion)を参考にしてください。
+入力する数値は[このサイト](https://clpc.club/e_motion)を参考にしてください。
  - is_explosion
 > 爆発ノックバック扱いかどうか True/False
  - is_knockback
