@@ -46,14 +46,5 @@ function e_motion:store/z
 scoreboard players reset #e_motion
 scoreboard players reset #e_motion.digit
 
-# 何もない上空へ一瞬だけ退避させ、衝突判定を確実に避ける。
-execute at @s run summon marker ~ ~ ~ {Tags:["iemp."]}
-execute at @s run rotate @n[tag=iemp.] ~ ~
-tp @s ~ 1000 ~
-
 # エンチャント付与：符号(custom_data)とレベルを1コマンドでアトミックに反映する。
 function e_motion:4.enchant_set with storage e_motion: _.macro
-
-# 復帰する
-tp @s @n[tag=iemp.]
-kill @n[tag=iemp.]
