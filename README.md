@@ -117,4 +117,5 @@ function #e_motion:
 ---
 
 ## ライセンス
-LICENSEファイルを必ず確認してください
+
+詳細は [LICENSE](LICENSE) を参照。
