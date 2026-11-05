@@ -1,3 +1,5 @@
+[English](README.md) | 日本語
+
 # Im E Motion Plus
 
 エンチャントの`apply_impulse`を利用してプレイヤー・MobのMotionを操作するデータパック
