@@ -38,7 +38,6 @@ function #e_motion:
 #### List of Data Available in `in`
 - x / y / z
 > Direction vector component values (in units of 0.0001)
-> Please refer to [this site](https://clpc.club/e_motion).
 - is_explosion
 > Whether to treat as explosion knockback: True/False
 - is_knockback
