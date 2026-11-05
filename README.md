@@ -1,3 +1,5 @@
+English | [日本語](README_jp.md)
+
 # Im E Motion Plus
 
 A datapack that manipulates the motion of players and mobs using the enchant `apply_impulse`.
