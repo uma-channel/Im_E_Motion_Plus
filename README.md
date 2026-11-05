@@ -4,8 +4,6 @@ English | [日本語](README_jp.md)
 
 A datapack that manipulates the motion of players and mobs using the enchant `apply_impulse`.
 
-Please refer to [this site](https://clpc.club/e_motion) for the values to input.
-
 ---
 
 This datapack is a fork of [ImpulseMotion](https://github.com/nea-c/ImpulseMotion) by nea-c and [PlayerMotion](https://github.com/Hirobao1/CustomEnchant_PlayerMotion) by Hirobao1.
