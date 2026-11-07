@@ -24,11 +24,11 @@ Set data in `e_motion: in` and run the function!
 data modify storage e_motion: in set value {x:0.0000,y:0.0000,z:1.0000, is_looking:true}
 ```
 ### Example 2: By XYZ
-```nofunction
+```mcfunction
 data modify storage e_motion: in set value {x:1.0000,y:10.0000,z:1.0000}
 ```
 ### Apply Motion
-```mcfuncion
+```mcfunction
 function #e_motion:
 ```
 
