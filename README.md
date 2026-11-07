@@ -20,15 +20,15 @@ Due to major internal processing changes, the user experience and behavior under
 Set data in `e_motion: in` and run the function!
 
 ### Example 1: By Execution Direction
-```
+```mcfunction
 data modify storage e_motion: in set value {x:0.0000,y:0.0000,z:1.0000, is_looking:true}
 ```
 ### Example 2: By XYZ
-```
+```nofunction
 data modify storage e_motion: in set value {x:1.0000,y:10.0000,z:1.0000}
 ```
 ### Apply Motion
-```
+```mcfuncion
 function #e_motion:
 ```
 
